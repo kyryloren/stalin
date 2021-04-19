@@ -1,36 +1,12 @@
 /* eslint react-hooks/exhaustive-deps: 0 */
-import React, { useEffect, useRef } from 'react';
-import { TimelineLite, gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import React from 'react';
 import { AboutSection, Row, Col } from './style';
-import { StyledImage, ImageAnim, ParaText } from '@styles';
-
-gsap.registerPlugin(ScrollTrigger);
+import { StyledImage, ParaText } from '@styles';
 
 const About = ({ data }) => {
-  let tl = new TimelineLite();
-  let aboutSection = useRef(null);
-  let image = useRef(null);
-
-  useEffect(() => {
-    tl.to(image, {
-      scrollTrigger: {
-        trigger: aboutSection,
-        pin: true,
-        scrub: true,
-        start: 'center center',
-        end: 'bottom top',
-        scroller: '#___gatsby',
-      },
-      scaleY: 0,
-    });
-
-    ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
-  }, [tl]);
-
   return (
     <AboutSection>
-      <Row ref={el => (aboutSection = el)}>
+      <Row>
         <Col>
           <ParaText number="01">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -44,7 +20,6 @@ const About = ({ data }) => {
           </ParaText>
         </Col>
         <Col>
-          <ImageAnim ref={el => (image = el)} />
           <StyledImage
             fluid={data.nkvd_police2.childImageSharp.fluid}
             alt="Stalin's Secret Police"
