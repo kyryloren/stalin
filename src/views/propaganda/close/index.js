@@ -15,8 +15,8 @@ const Close = ({ data }) => {
   return (
     <CloseSection>
       <Row>
-        <Row row data-scroll data-scroll-speed={1}>
-          <TopImage>
+        <Row row>
+          <TopImage data-scroll data-scroll-speed={2}>
             <StyledImage
               fluid={data.prop_poster5.childImageSharp.fluid}
               alt="Stalin's propaganda"
@@ -29,7 +29,7 @@ const Close = ({ data }) => {
           </NormalText>
         </Row>
         <Row>
-          <BottomImageWrap data-scroll data-scroll-speed={3}>
+          <BottomImageWrap>
             <BottomImage>
               <StyledImage
                 fluid={data.prop_poster6.childImageSharp.fluid}

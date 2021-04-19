@@ -10,8 +10,6 @@ const Hero = ({ data }) => {
       <SecondLineWrap>
         <ImageWrapper>
           <StyledImage
-            data-scroll
-            data-scroll-speed={1}
             fluid={data.nkvd_police1.childImageSharp.fluid}
             alt="Stalin's NKVD"
             style={{ position: 'absolute' }}

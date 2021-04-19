@@ -8,6 +8,8 @@ export const Row = styled.div`
   display: flex;
   width: 100%;
 
+  ${props => props.pt && `padding-top: 10vh;`};
+
   ${props =>
     props.bottom &&
     `

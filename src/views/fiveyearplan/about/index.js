@@ -26,6 +26,7 @@ const About = ({ data }) => {
     });
 
     ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
+    ScrollTrigger.refresh();
   }, [tl]);
 
   return (

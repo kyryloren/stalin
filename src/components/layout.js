@@ -26,7 +26,7 @@ const Layout = ({ children, location }) => {
 
           <ThemeProvider>
             <GlobalStyle />
-            <main key={location.pathname}>
+            <main key={location.pathname} id="#scrollContainer">
               <Nav />
               {children}
             </main>

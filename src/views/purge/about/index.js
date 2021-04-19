@@ -30,10 +30,10 @@ const About = ({ data }) => {
               </ParaText>
             </ParagraphWrapper>
           </StyledRow>
-          <BigTitleText>November 1939</BigTitleText>
+          <BigTitleText>November 1938</BigTitleText>
         </Row>
         <Row>
-          <BigTitleText>October 1936—</BigTitleText>
+          <BigTitleText>August 1936—</BigTitleText>
           <StyledImage
             secondImage
             fluid={data.purge_soldiers.childImageSharp.fluid}

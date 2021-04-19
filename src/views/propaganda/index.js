@@ -25,6 +25,7 @@ const Purge = ({ data }) => {
     });
 
     ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
+    ScrollTrigger.refresh();
   }, []);
 
   return (

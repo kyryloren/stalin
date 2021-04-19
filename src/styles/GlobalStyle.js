@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     font-variant-ligatures: common-ligatures;
     text-rendering: optimizelegibility;
-    overflow: hidden;
+    overflow-x: hidden;
     background: var(--background);
     color: var(--text);
     font-family: var(--font-family);

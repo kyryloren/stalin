@@ -2,7 +2,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import { Hero, FiveYearPlan, Purge, Propaganda, NKVD } from '@views';
+import { Hero, FiveYearPlan, Purge, Propaganda, NKVD, Transition } from '@views';
 
 const HomePage = ({ data }) => {
   return (
@@ -15,6 +15,7 @@ const HomePage = ({ data }) => {
         <Purge data={data} />
       </div>
       <Propaganda data={data} />
+      <Transition data={data} />
       <div id="nkvd">
         <NKVD data={data} />
       </div>
@@ -123,6 +124,27 @@ export const query = graphql`
       }
     }
     prop_poster6: file(relativePath: { eq: "propaganda/poster6.png" }) {
+      childImageSharp {
+        fluid(fit: COVER) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    trans_image1: file(relativePath: { eq: "transition/image1.png" }) {
+      childImageSharp {
+        fluid(fit: COVER) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    trans_image2: file(relativePath: { eq: "transition/image2.png" }) {
+      childImageSharp {
+        fluid(fit: COVER) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    trans_image3: file(relativePath: { eq: "transition/image3.png" }) {
       childImageSharp {
         fluid(fit: COVER) {
           ...GatsbyImageSharpFluid_withWebp

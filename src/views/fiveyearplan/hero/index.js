@@ -39,6 +39,7 @@ const Hero = ({ data }) => {
     });
 
     ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
+    ScrollTrigger.refresh();
   }, [tl]);
 
   return (
@@ -76,20 +77,21 @@ const Hero = ({ data }) => {
       <AboutText>
         <SplitWrapper>
           <ParaWrapper top>
-            <CaptionText>Lorem ipsum dolor sit amet,</CaptionText>
-            <CaptionText>consectetur adipiscing elit,</CaptionText>
-            <CaptionText>sed do eiusmod tempor.</CaptionText>
+            <CaptionText>Done by taking control of</CaptionText>
+            <CaptionText>the economy and using forced</CaptionText>
+            <CaptionText> collectivization of agriculture</CaptionText>
           </ParaWrapper>
           <ParaWrapper top>
             <NormalText>
               The Five Year Plan was intended to transform the soviet union from a
+              peasantry/agricultural
             </NormalText>
           </ParaWrapper>
         </SplitWrapper>
         <ParaWrapper>
           <NormalText>
-            peasantry/agricultural economy to an industrial power. It was meant to help the soviets
-            win more wars and develop a better communist government.
+            economy to an industrial power. It was meant to help the soviets win more wars and
+            develop a better communist government.
           </NormalText>
         </ParaWrapper>
       </AboutText>

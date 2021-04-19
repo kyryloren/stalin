@@ -34,6 +34,7 @@ const Politics = ({ data }) => {
     });
 
     ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
+    ScrollTrigger.refresh();
   }, []);
 
   return (
@@ -68,7 +69,7 @@ const Politics = ({ data }) => {
           />
         </Col>
       </Row>
-      <Row bottom>
+      <Row bottom pt>
         <ParaWrapper top>
           <NormalText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</NormalText>
         </ParaWrapper>
@@ -79,7 +80,7 @@ const Politics = ({ data }) => {
           </NormalText>
         </ParaWrapper>
       </Row>
-      <Row>
+      <Row pt>
         <Col smaller>
           <StyledImage
             fluid={data.nkvd_police5.childImageSharp.fluid}

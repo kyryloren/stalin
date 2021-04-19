@@ -17,7 +17,7 @@ export const SecondLineWrap = styled.div`
 export const ImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
-  width: 65%;
+  width: 55vw;
   height: auto;
-  min-height: 55vw;
+  min-height: 60vh;
 `;
