@@ -26,7 +26,7 @@ export const StyledImage = styled(Img)`
   width: 100%;
 `;
 export const NormalText = styled.p`
-  font-size: 4vw;
+  font-size: 3.25vw;
   line-height: 110%;
   margin: 0;
 `;

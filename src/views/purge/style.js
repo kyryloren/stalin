@@ -15,7 +15,7 @@ export const NumberWrapper = styled.div`
 `;
 export const BigTitleText = styled.h1`
   font-family: var(--font-family-serif);
-  font-size: 25vw;
+  font-size: 20vw;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;

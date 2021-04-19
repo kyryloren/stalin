@@ -19,7 +19,7 @@ const Purge = ({ data }) => {
       scrollTrigger: {
         scroller: '#___gatsby',
         trigger: scrollContainer,
-        start: '-10000% bottom',
+        start: '-2000% bottom',
         scrub: true,
       },
     });

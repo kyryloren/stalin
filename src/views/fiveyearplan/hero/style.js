@@ -57,7 +57,7 @@ export const ParaWrapper = styled.div`
   flex-direction: column;
 `;
 export const NormalText = styled.p`
-  font-size: 4vw;
+  font-size: 3.25vw;
   line-height: 110%;
   margin: 0;
 `;

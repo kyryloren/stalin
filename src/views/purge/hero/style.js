@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FirstPanel = styled.div`
-  width: 200vw;
+  width: 170vw;
 `;
 export const SecondLine = styled.div`
   display: flex;
@@ -23,10 +23,7 @@ export const ImageContainer = styled.div`
 `;
 export const ParaBox = styled.div`
   position: relative;
-  margin-left: 10vw;
-  padding: 3vw;
-  height: 100%;
+  margin-left: 15vw;
   width: 20%;
-  background-color: #ee8434;
-  color: #121111;
+  margin-bottom: 3vw;
 `;

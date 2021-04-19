@@ -15,7 +15,7 @@ const Purge = ({ data }) => {
 
   useEffect(() => {
     gsap.to(scrollContainer, {
-      xPercent: -500,
+      xPercent: -350,
       scrollTrigger: {
         scroller: '#___gatsby',
         trigger: scrollContainer,

@@ -4,13 +4,14 @@ import Img from 'gatsby-image';
 
 export const SecondPanel = styled.div`
   display: flex;
-  width: 340vw;
+  width: 270vw;
 `;
 export const StyledImage = styled(Img)`
   position: relative;
-  width: ${props => (props.secondImage ? '45vw' : '80vw')};
-  height: 100%;
+  width: ${props => (props.secondImage ? '45vw' : '50vw')};
+  height: 80%;
   margin-top: -3vw;
+  margin-left: 2vw;
 `;
 export const ParagraphWrapper = styled.div`
   width: 40vw;
@@ -20,7 +21,7 @@ export const ParagraphWrapper = styled.div`
   }
 `;
 export const StyledSplitWrapper = styled(SplitWrapper)`
-  margin-left: 5vw;
+  margin-left: 2vw;
 `;
 export const StyledRow = styled(Row)`
   margin: 0 10vw;
