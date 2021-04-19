@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FirstPanel = styled.div`
-  width: 230vw;
+  width: 200vw;
 `;
 export const SecondLine = styled.div`
   display: flex;
