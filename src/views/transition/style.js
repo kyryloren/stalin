@@ -14,7 +14,7 @@ export const ImageOne = styled.div`
   top: 20%;
   left: 5%;
   width: 45vw;
-  height: 30vw;
+  height: 50vh;
 `;
 export const ImageTwo = styled.div`
   position: absolute;
@@ -24,12 +24,12 @@ export const ImageTwo = styled.div`
 `;
 export const ImageTwoWrap = styled.div`
   width: 45vw;
-  height: 30vw;
+  height: 50vh;
 `;
 export const ImageThree = styled.div`
   position: absolute;
   top: 35%;
   right: 5%;
   width: 45vw;
-  height: 30vw;
+  height: 50vh;
 `;

@@ -7,7 +7,7 @@ import { Head, SmoothScroll, ThemeProvider, Nav, Loader } from '@components';
 import { GlobalStyle } from '@styles';
 
 const Layout = ({ children, location }) => {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
   let tl = new TimelineLite();
   let sectionContainer = useRef(null);
 
@@ -16,7 +16,7 @@ const Layout = ({ children, location }) => {
       tl.fromTo(
         sectionContainer,
         { opacity: 0 },
-        { opacity: 1, ease: Power4.easeInOut, duration: 1.2 },
+        { opacity: 1, ease: Power4.easeInOut, duration: 0.4 },
       );
     }
   }, [loaded]);

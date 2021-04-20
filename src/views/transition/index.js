@@ -23,15 +23,15 @@ const Transition = ({ data }) => {
       .from(image.current[0], { top: 0, left: '-45%' })
       .from(image.current[1], { top: 0, right: '-45%' }, 0)
       .from(image.current[2], { top: 0, right: '-45%' }, 0)
-      .to(image.current[3], { width: '100vw', height: '70vw' }, 1)
-      .to(image.current[1], { right: 0, top: '-20%' }, 1)
+      .to(image.current[3], { width: '100vw', height: '100vh' }, 1)
+      .to(image.current[1], { right: 0, top: 0 }, 1)
       .to(image.current[0], { top: 0 }, 1)
       .to(image.current[2], { top: '-40%' }, 1);
 
     ScrollTrigger.create({
       trigger: sectionContainer,
-      start: 'top +=15%',
-      end: ' +=2000 +=15%',
+      start: '-=100 top',
+      end: ' +=2000 200vh',
       scroller: '#___gatsby',
       animation: tl,
       scrub: true,
