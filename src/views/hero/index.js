@@ -1,13 +1,11 @@
 /* eslint react-hooks/exhaustive-deps: 0 */
 import React, { useEffect, useRef } from 'react';
-import { TimelineLite, Power3 } from 'gsap';
+import { TimelineLite, Power4 } from 'gsap';
 import {
   SectionWrapper,
   ImageWrapper,
   BigTitle,
   ImageContainer,
-  LeftWrap,
-  RightWrap,
   FooterWrapper,
   SectionFooter,
   FooterText,
@@ -19,38 +17,33 @@ const Hero = ({ data }) => {
   let topText = useRef([]);
   let bottomText = useRef([]);
   let image = useRef([]);
-  let leftText = useRef(null);
-  let rightText = useRef(null);
 
   useEffect(() => {
     tl.staggerFrom(
       topText.current,
-      0.8,
-      { scale: 0, yPercent: -100, ease: Power3.easeOut, delay: 1 },
+      1.3,
+      { scale: 0, yPercent: -100, delay: -0.5, ease: Power4.easeInOut },
       0.02,
     )
       .fromTo(
         image.firstElementChild,
         { scaleY: 1 },
-        { scaleY: 0, ease: Power3.easeOut, duration: 2 },
-        '-=0.7',
+        { scaleY: 0, ease: Power4.easeInOut, duration: 2.5 },
+        '-=0.9',
       )
       .fromTo(
         image.lastElementChild,
         { scale: 1.3 },
-        { scale: 1, ease: Power3.easeOut, duration: 1 },
-        '-=2',
+        { scale: 1, ease: Power4.easeInOut, duration: 1.5 },
+        '-=2.2',
       )
       .staggerFrom(
         bottomText.current,
-        0.8,
-        { scale: 0, yPercent: -100, ease: Power3.easeOut },
+        1.3,
+        { scale: 0, yPercent: -100, ease: Power4.easeInOut },
         0.02,
-        '-=2',
-      )
-      .add('dates', '-=1.5')
-      .from(leftText, { yPercent: -100, ease: Power3.easeOut }, 'dates')
-      .from(rightText, { yPercent: -100, ease: Power3.easeOut }, 'dates');
+        '-=2.2',
+      );
   }, [tl]);
 
   return (
@@ -90,20 +83,6 @@ const Hero = ({ data }) => {
             <div ref={el => (bottomText.current[8] = el)}>R</div>
           </BigTitle>
         </Overflow>
-        <LeftWrap>
-          <div data-scroll data-scroll-speed={2}>
-            <Overflow>
-              <div ref={el => (leftText = el)}>1922</div>
-            </Overflow>
-          </div>
-        </LeftWrap>
-        <RightWrap>
-          <div data-scroll data-scroll-speed={2}>
-            <Overflow>
-              <div ref={el => (rightText = el)}>1953</div>
-            </Overflow>
-          </div>
-        </RightWrap>
         <ImageWrapper>
           <ImageContainer ref={el => (image = el)} data-scroll data-scroll-id="image">
             <ImageAnim />

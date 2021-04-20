@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-background-image`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {

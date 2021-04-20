@@ -35,22 +35,6 @@ export const BigTitle = styled.h1`
   text-align: center;
   justify-content: center;
 `;
-export const LeftWrap = styled(BigTitle)`
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  font-size: 10vw;
-
-  ${media.phablet`display: none;`}
-`;
-export const RightWrap = styled(BigTitle)`
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  font-size: 10vw;
-
-  ${media.phablet`display: none;`}
-`;
 export const FooterWrapper = styled.div`
   position: absolute;
   top: 0;
