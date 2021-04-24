@@ -43,14 +43,15 @@ const About = ({ data }) => {
           </Col>
           <Col>
             <ParaText number="01">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
+              Stalin did this by taking control of the economy and using forced collectivization of
+              agriculture. In forced colectivization the government took control of private farms
+              and forced them to work for massive state owned enterprises, those who refused were
+              exiled/killed. Many were also sent to the Gulag, a prison labor system established
+              during the first five year plan.
             </ParaText>
             <ParaText number="02">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              In 1929 the number of collectivized farms was 5%, but by 1939 the number was up to
+              99%. But collectivization did a lot of harm, causing a famine and millions dead
             </ParaText>
           </Col>
         </Row>

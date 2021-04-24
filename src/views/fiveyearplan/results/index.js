@@ -49,16 +49,17 @@ const Results = ({ data }) => {
         <HalfRow>
           <HalfCol>
             <ParaText number="03">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              The USSR did succeed in modernizing and becoming a military threat. Some examples
+              include imporved eletricity supply and an increase in machines produced. Heavy
+              industries also saw an increase in output and productivity.
             </ParaText>
           </HalfCol>
           <HalfCol>
             <ParaText number="04">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              The five year plans were poorly organized, leading to wastes in resources. These plans
+              were also executed through severe means, usually at the cost of human lives and
+              rights. This included many accidental deaths, slave labor, labor camps (Gulag), and
+              horrible work conditions.
             </ParaText>
           </HalfCol>
         </HalfRow>

@@ -77,9 +77,9 @@ const Hero = ({ data }) => {
       <AboutText>
         <SplitWrapper>
           <ParaWrapper top>
-            <CaptionText>Done by taking control of</CaptionText>
-            <CaptionText>the economy and using forced</CaptionText>
-            <CaptionText> collectivization of agriculture</CaptionText>
+            <CaptionText>After the first 5 year plan</CaptionText>
+            <CaptionText>the industrial output of</CaptionText>
+            <CaptionText>the USSR increased by 55%</CaptionText>
           </ParaWrapper>
           <ParaWrapper top>
             <NormalText>
