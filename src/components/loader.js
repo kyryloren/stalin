@@ -51,7 +51,7 @@ const Loader = ({ setLoaded }) => {
 
   useEffect(() => {
     if (percent === 100) {
-      tl.to(textRef, { yPercent: -100, ease: Power4.easeInOut, duration: 1.2, delay: 1 }).to(
+      tl.to(textRef, { yPercent: -100, ease: Power4.easeIn, duration: 1, delay: 0.4 }).to(
         sectionContainer,
         {
           height: 0,
@@ -59,6 +59,7 @@ const Loader = ({ setLoaded }) => {
           duration: 1.2,
           onComplete: () => setLoaded(true),
         },
+        '-=0.3',
       );
     }
   }, [percent]);
