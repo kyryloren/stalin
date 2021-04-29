@@ -9,14 +9,14 @@ const About = ({ data }) => {
       <Row>
         <Col>
           <ParaText number="01">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
+            The NKVD’s main job was to ensure national security, however it was carried out in very
+            radical ways. They would find and arrest anyone suspected of being
+            anti-Communist/Stalinist, these people would then either be killed or sent to the Gulag.
           </ParaText>
           <ParaText number="02">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Not long after their establishment the NKVD became feared by all citizens throughout the
+            USSR. This intimidation proved useful as people would spy on neighbors and report them
+            to the NKVD, believing that if they didn’t they instead would get reported on.
           </ParaText>
         </Col>
         <Col>

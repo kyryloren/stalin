@@ -24,8 +24,8 @@ const Close = ({ data }) => {
             />
           </TopImage>
           <NormalText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
+            Propaganda even infiltrated education, as teachers were forced to teach Communist
+            principles and glorify Stalin’s rule.
           </NormalText>
         </Row>
         <Row>
@@ -41,16 +41,18 @@ const Close = ({ data }) => {
           <Row row>
             <HalfCol>
               <ParaText number="03">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                Other media forms like the radio, posters, and cinema were propagandized with
+                Communist themes and symbols to help reach the illiterate of Russia. Newspapers and
+                books had also been seized and put under propagandist publication, with opposing
+                newspapers and books being shut down or purged.
               </ParaText>
             </HalfCol>
             <HalfCol>
               <ParaText number="04">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                Propaganda was also used to support his controversial policies, like
+                collectivization. A tale of Stakhanov was even coined, depicting him mining 105
+                tonnes of coal in one shift and praising him as a hero of socialist workers; hoping
+                to instill this work ethic into the working people.
               </ParaText>
             </HalfCol>
           </Row>

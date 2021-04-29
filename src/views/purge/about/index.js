@@ -17,16 +17,16 @@ const About = ({ data }) => {
           <StyledRow>
             <ParagraphWrapper>
               <ParaText number="02">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Was started by the killing of Sergei Kirov who was a political leader in the
+                Leningrad apparatus that had gained massive popularity. Stalin, being very paranoid,
+                staged his with the NKVD, using it as a pretext to The Great Purge
               </ParaText>
             </ParagraphWrapper>
             <ParagraphWrapper>
               <ParaText number="03">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Using the killing of Kirov, Stalin began arresting other innocent political members
+                and forming staged trials for others. In these staged trials people were tortured
+                behind the scenes into falsely admitting to the crimes in court.
               </ParaText>
             </ParagraphWrapper>
           </StyledRow>
@@ -42,9 +42,9 @@ const About = ({ data }) => {
           <StyledRow>
             <ParagraphWrapper>
               <ParaText number="04">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Altogether the Purges helped to maintain Stalin’s authority and further intimidate
+                any other political members. The Great Terror is sometimes thought of as the crime
+                of the century, as estimated deaths near 1 million.
               </ParaText>
             </ParagraphWrapper>
           </StyledRow>

@@ -56,9 +56,9 @@ const Politics = ({ data }) => {
       <Row>
         <Col>
           <ParaText number="03">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            As Stalin’s power increased so did the secret police of the USSR, forming the People’s
+            Commissariat for Internal Affairs, which is abbreviated as the NKVD in Russian. The
+            police force went from being used purely for enforcement to a political weapon.
           </ParaText>
         </Col>
         <Col>
@@ -71,12 +71,14 @@ const Politics = ({ data }) => {
       </Row>
       <Row bottom pt>
         <ParaWrapper top>
-          <NormalText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</NormalText>
+          <NormalText>
+            The NKVD was very powerful, with Communist support and a massive intelligence system,
+          </NormalText>
         </ParaWrapper>
         <ParaWrapper bottom>
           <NormalText>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute
+            allowing their paramilitary to carry out domestic and ethnic repression when necessary,
+            on top of political missions.
           </NormalText>
         </ParaWrapper>
       </Row>
@@ -89,10 +91,10 @@ const Politics = ({ data }) => {
           />
         </Col>
         <Col reverse smaller np>
-          <ParaText number="03">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <ParaText number="04">
+            After forming the NKVD, which was separated from party control and clear governmental
+            regulation, they became tools for Stalin to carry out his Communist Agenda. This
+            included carrying out the Great Purges, political assassinations and kidnappings.
           </ParaText>
         </Col>
       </Row>

@@ -7,7 +7,7 @@ import { Head, SmoothScroll, ThemeProvider, Nav, Loader } from '@components';
 import { GlobalStyle } from '@styles';
 
 const Layout = ({ children, location }) => {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
   let tl = new TimelineLite();
   let sectionContainer = useRef(null);
 
