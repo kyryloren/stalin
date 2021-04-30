@@ -24,13 +24,11 @@ const Transition = ({ data }) => {
       .from(image.current[1], { top: 0, right: '-45%' }, 0)
       .from(image.current[2], { top: 0, right: '-45%' }, 0)
       .to(image.current[3], { width: '100vw', height: '100vh' }, 1)
-      .to(image.current[1], { right: 0, top: 0 }, 1)
-      .to(image.current[0], { top: 0 }, 1)
-      .to(image.current[2], { top: '-40%' }, 1);
+      .to(image.current[1], { right: 0, top: 0 }, 1);
 
     ScrollTrigger.create({
       trigger: sectionContainer,
-      start: '-=100 top',
+      start: 'top 200vh',
       end: ' +=2000 200vh',
       scroller: '#___gatsby',
       animation: tl,
