@@ -1,25 +1,24 @@
-/* eslint react-hooks/exhaustive-deps: 0 */
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { TimelineLite, Power4 } from 'gsap';
+import { Power4, gsap } from 'gsap';
 import { StaticQuery, graphql } from 'gatsby';
-import { Head, SmoothScroll, ThemeProvider, Nav, Loader, Footer } from '@components';
+import { Head, SmoothScroll, ThemeProvider, Nav, Loader, Footer, MobileWrapper } from '@components';
 import { GlobalStyle } from '@styles';
 
 const Layout = ({ children, location }) => {
-  const [loaded, setLoaded] = useState(true);
-  let tl = new TimelineLite();
+  const [loaded, setLoaded] = useState(false);
+  let tl = gsap.timeline();
   let sectionContainer = useRef(null);
 
   useEffect(() => {
-    if (loaded) {
+    if (loaded && sectionContainer) {
       tl.fromTo(
         sectionContainer,
         { opacity: 0 },
         { opacity: 1, ease: Power4.easeInOut, duration: 0.4 },
       );
     }
-  }, [loaded]);
+  }, [tl, loaded, sectionContainer]);
 
   return (
     <StaticQuery
@@ -43,6 +42,7 @@ const Layout = ({ children, location }) => {
             <GlobalStyle />
             {loaded ? (
               <>
+                <MobileWrapper location={location.pathname} />
                 <main key={location.pathname} ref={el => (sectionContainer = el)}>
                   <Nav />
                   {children}

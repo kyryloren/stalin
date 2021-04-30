@@ -6,3 +6,4 @@ export { default as Nav } from './nav';
 export { default as Toggle } from './toggle';
 export { default as Loader } from './loader';
 export { default as Footer } from './footer';
+export { default as MobileWrapper } from './mobileWrapper';
