@@ -40,7 +40,6 @@ const Hero = ({ data }) => {
         animation: tl,
         scrub: true,
         pin: true,
-        markers: true,
       });
 
       ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
