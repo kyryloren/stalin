@@ -32,12 +32,13 @@ const Hero = ({ data }) => {
 
     ScrollTrigger.create({
       trigger: sectionContainer,
-      start: 'top top',
+      start: '-40% top',
       end: '+=2000 200vh',
       scroller: '#___gatsby',
       animation: tl,
       scrub: true,
       pin: true,
+      markers: true,
     });
 
     ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
