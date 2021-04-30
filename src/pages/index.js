@@ -2,7 +2,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import { Hero, FiveYearPlan, Purge, Propaganda, NKVD, Transition } from '@views';
+import { Hero, FiveYearPlan, Purge, Propaganda, NKVD, Transition, Cult } from '@views';
 
 const HomePage = ({ data }) => {
   return (
@@ -19,11 +19,7 @@ const HomePage = ({ data }) => {
       <div id="nkvd">
         <NKVD data={data} />
       </div>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
+      <Cult data={data} />
     </>
   );
 };
@@ -180,6 +176,41 @@ export const query = graphql`
       }
     }
     nkvd_police5: file(relativePath: { eq: "nkvd/police5.png" }) {
+      childImageSharp {
+        fluid(fit: COVER) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    cult_poster1: file(relativePath: { eq: "cult/poster1.png" }) {
+      childImageSharp {
+        fluid(fit: COVER) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    cult_poster2: file(relativePath: { eq: "cult/poster2.png" }) {
+      childImageSharp {
+        fluid(fit: COVER) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    cult_poster3: file(relativePath: { eq: "cult/poster3.png" }) {
+      childImageSharp {
+        fluid(fit: COVER) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    cult_poster4: file(relativePath: { eq: "cult/poster4.png" }) {
+      childImageSharp {
+        fluid(fit: COVER) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    cult_poster5: file(relativePath: { eq: "cult/poster5.png" }) {
       childImageSharp {
         fluid(fit: COVER) {
           ...GatsbyImageSharpFluid_withWebp

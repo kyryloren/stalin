@@ -14,7 +14,9 @@ const GlobalStyle = createGlobalStyle`
     --font-family: 'neue-haas-grotesk-display', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     --font-family-serif: 'Moniqa', 'Times New Roman', Times, serif;
   }
-  
+  #___gatsby {
+    overflow: hidden !important;
+  }
   html {
     box-sizing: border-box;
     width: 100%;

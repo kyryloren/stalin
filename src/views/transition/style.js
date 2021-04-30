@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 
 export const TransitionSection = styled.section`
   position: relative;
-  height: 100vh;
+  padding-bottom: 100vh;
 `;
 export const StyledImage = styled(Img)`
   width: 100%;

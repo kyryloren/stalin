@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { TimelineLite, Power4 } from 'gsap';
 import { StaticQuery, graphql } from 'gatsby';
-import { Head, SmoothScroll, ThemeProvider, Nav, Loader } from '@components';
+import { Head, SmoothScroll, ThemeProvider, Nav, Loader, Footer } from '@components';
 import { GlobalStyle } from '@styles';
 
 const Layout = ({ children, location }) => {
@@ -38,15 +38,17 @@ const Layout = ({ children, location }) => {
         <>
           <Head metadata={site.site.siteMetadata} />
           <SmoothScroll callbacks={location} />
-          {/* <Cursor /> */}
 
           <ThemeProvider>
             <GlobalStyle />
             {loaded ? (
-              <main key={location.pathname} ref={el => (sectionContainer = el)}>
-                <Nav />
-                {children}
-              </main>
+              <>
+                <main key={location.pathname} ref={el => (sectionContainer = el)}>
+                  <Nav />
+                  {children}
+                  <Footer />
+                </main>
+              </>
             ) : (
               <Loader setLoaded={setLoaded} />
             )}
