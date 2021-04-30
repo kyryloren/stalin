@@ -1,4 +1,3 @@
-/* eslint react-hooks/exhaustive-deps: 0 */
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -20,29 +19,34 @@ const Hero = ({ data }) => {
   let imageRef = useRef(null);
 
   useEffect(() => {
-    let tl = gsap
-      .timeline({ defaults: { ease: 'none' } })
-      .to(textRef.current[0], { xPercent: -50, yPercent: -30, left: '50%', top: '30%' }, 0)
-      .to(textRef.current[1], { xPercent: -50, yPercent: -60, left: '50%', top: '60%' }, 0)
-      .to(textRef.current[2], { xPercent: -50, yPercent: -80, left: '50%', top: '90%' }, 0)
-      .to(textRef.current[0], { scale: 10, opacity: 0 }, 0.8)
-      .to(textRef.current[1], { scale: 10, opacity: 0 }, 0.8)
-      .to(textRef.current[2], { scale: 10, opacity: 0 }, 0.8)
-      .to(imageRef, { scale: 2, autoAlpha: 1 }, 1);
+    // We set this timeout because for some reason without it we're
+    // not able to calculate the correct top position
+    setTimeout(() => {
+      let tl = gsap
+        .timeline({ defaults: { ease: 'none' } })
+        .to(textRef.current[0], { xPercent: -50, yPercent: -30, left: '50%', top: '30%' }, 0)
+        .to(textRef.current[1], { xPercent: -50, yPercent: -60, left: '50%', top: '60%' }, 0)
+        .to(textRef.current[2], { xPercent: -50, yPercent: -80, left: '50%', top: '90%' }, 0)
+        .to(textRef.current[0], { scale: 10, opacity: 0 }, 0.8)
+        .to(textRef.current[1], { scale: 10, opacity: 0 }, 0.8)
+        .to(textRef.current[2], { scale: 10, opacity: 0 }, 0.8)
+        .to(imageRef, { scale: 2, autoAlpha: 1 }, 1);
 
-    ScrollTrigger.create({
-      trigger: sectionContainer,
-      start: 'top top',
-      end: '+=2000 200vh',
-      scroller: '#___gatsby',
-      animation: tl,
-      scrub: true,
-      pin: true,
-    });
+      ScrollTrigger.create({
+        trigger: sectionContainer,
+        start: 'top top',
+        end: '+=2000 200vh',
+        scroller: '#___gatsby',
+        animation: tl,
+        scrub: true,
+        pin: true,
+        markers: true,
+      });
 
-    ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
-    ScrollTrigger.refresh();
-  }, []);
+      ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
+      ScrollTrigger.refresh();
+    }, 200);
+  }, [sectionContainer, textRef, imageRef]);
 
   return (
     <HeroSection ref={el => (sectionContainer = el)}>

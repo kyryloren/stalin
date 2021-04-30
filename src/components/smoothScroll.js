@@ -26,7 +26,7 @@ const Scroll = callbacks => {
     });
 
     // Exposing to the global scope for ease of use.
-    setTimeout(() => locomotiveScroll.update(), 300);
+    locomotiveScroll.update();
     window.scroll = locomotiveScroll;
 
     locomotiveScroll.on('scroll', ScrollTrigger.update);

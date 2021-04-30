@@ -4,10 +4,6 @@ import Img from 'gatsby-image';
 export const HeroSection = styled.div`
   position: relative;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 export const TitleWrapper = styled.div`
   position: absolute;
