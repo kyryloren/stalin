@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 
 export const AboutSection = styled.div`
-  margin-top: -74vh;
+  margin-top: -80vh;
 `;
 export const Row = styled.div`
   display: flex;

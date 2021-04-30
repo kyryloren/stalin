@@ -23,7 +23,7 @@ export const TitleWrapper = styled.div`
 `;
 export const BigTitle = styled.h1`
   font-family: var(--font-family-serif);
-  font-size: 20vh;
+  font-size: 25vh;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;

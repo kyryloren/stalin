@@ -8,7 +8,7 @@ export const HeroSection = styled.div`
 `;
 export const NumberWrapper = styled.div`
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 10%;
   z-index: 3;
 `;
@@ -50,8 +50,5 @@ export const Row = styled.div`
   justify-content: center;
   z-index: 2;
   width: 100%;
-  margin-top: 45%;
+  margin-top: 55%;
 `;
-export const TopText = styled.div``;
-export const MiddleText = styled.div``;
-export const BottomText = styled.div``;

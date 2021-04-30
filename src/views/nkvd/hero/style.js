@@ -6,7 +6,7 @@ export const HeroSection = styled.div`
 export const NumberWrapper = styled.div`
   position: absolute;
   right: 15%;
-  bottom: 10%;
+  bottom: 0;
   z-index: 2;
 `;
 export const SecondLineWrap = styled.div`

@@ -7,7 +7,7 @@ const FooterWrapper = styled.footer`
   align-items: flex-end;
   justify-content: center;
   height: 100vh;
-  /* background-color: var(--footer); */
+  background-color: var(--footer);
 `;
 const Row = styled.div`
   display: flex;
