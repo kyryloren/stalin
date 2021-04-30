@@ -28,7 +28,7 @@ const Transition = ({ data }) => {
 
     ScrollTrigger.create({
       trigger: sectionContainer,
-      start: 'top 200vh',
+      start: 'top top',
       end: ' +=2000 200vh',
       scroller: '#___gatsby',
       animation: tl,
