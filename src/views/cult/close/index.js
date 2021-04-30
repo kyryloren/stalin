@@ -21,23 +21,25 @@ const Close = ({ data }) => {
   let sectionContainer = useRef(null);
 
   useEffect(() => {
-    let tl = gsap
-      .timeline({ defaults: { ease: 'none' } })
-      .to(textRef.current[0], { left: '5.1%' }, 0)
-      .to(textRef.current[1], { left: '5.1%' }, 0)
-      .to(textRef.current[2], { left: '5.1%' }, 0);
+    setTimeout(() => {
+      let tl = gsap
+        .timeline({ defaults: { ease: 'none' } })
+        .to(textRef.current[0], { left: '5.1%' }, 0)
+        .to(textRef.current[1], { left: '5.1%' }, 0)
+        .to(textRef.current[2], { left: '5.1%' }, 0);
 
-    ScrollTrigger.create({
-      trigger: sectionContainer,
-      start: 'top bottom',
-      end: '+=2000 bottom',
-      scroller: '#___gatsby',
-      animation: tl,
-      scrub: true,
-    });
+      ScrollTrigger.create({
+        trigger: sectionContainer,
+        start: 'top bottom',
+        end: '+=2000 bottom',
+        scroller: '#___gatsby',
+        animation: tl,
+        scrub: true,
+      });
 
-    ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
-    ScrollTrigger.refresh();
+      ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
+      ScrollTrigger.refresh();
+    }, 200);
   }, []);
 
   return (

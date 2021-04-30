@@ -10,21 +10,23 @@ const Slider = ({ data }) => {
   let sectionContainer = useRef(null);
 
   useEffect(() => {
-    let tl = gsap
-      .timeline({ defaults: { ease: 'none' } })
-      .to(sectionContainer, { xPercent: '-=50' });
+    setTimeout(() => {
+      let tl = gsap
+        .timeline({ defaults: { ease: 'none' } })
+        .to(sectionContainer, { xPercent: '-=50' });
 
-    ScrollTrigger.create({
-      trigger: sectionContainer,
-      start: 'top bottom',
-      end: ' +=2000 top',
-      scroller: '#___gatsby',
-      animation: tl,
-      scrub: true,
-    });
+      ScrollTrigger.create({
+        trigger: sectionContainer,
+        start: 'top bottom',
+        end: ' +=2000 top',
+        scroller: '#___gatsby',
+        animation: tl,
+        scrub: true,
+      });
 
-    ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
-    ScrollTrigger.refresh();
+      ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
+      ScrollTrigger.refresh();
+    }, 200);
   }, []);
 
   return (
