@@ -3,8 +3,8 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Stalin's Rule In the USSR`,
-    description: `Description`,
-    siteUrl: 'https://stalin.com',
+    description: `Joseph Stalin was a revolutionary and the ruler of the Soviet Union. Stalin transformed the Soviet Union from a peasant society into a military superpower.`,
+    siteUrl: 'https://stalin.kyryloorlov.com',
     image: '/og.png',
     twitterUsername: '@kyryloren',
   },

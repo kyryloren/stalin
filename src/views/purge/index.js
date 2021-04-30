@@ -39,7 +39,7 @@ const Purge = ({ data }) => {
 
     ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
     ScrollTrigger.refresh();
-  }, []);
+  }, [scrollContainer, sectionNumber]);
 
   return (
     <StyledSection ref={el => (scrollContainer = el)}>

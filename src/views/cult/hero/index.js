@@ -1,4 +1,3 @@
-/* eslint react-hooks/exhaustive-deps: 0 */
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -32,7 +31,7 @@ const Hero = ({ data }) => {
 
     ScrollTrigger.create({
       trigger: sectionContainer,
-      start: '-40% top',
+      start: 'top top',
       end: '+=2000 200vh',
       scroller: '#___gatsby',
       animation: tl,
@@ -42,7 +41,7 @@ const Hero = ({ data }) => {
 
     ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
     ScrollTrigger.refresh();
-  }, []);
+  }, [sectionContainer, textRef, imageRef]);
 
   return (
     <HeroSection ref={el => (sectionContainer = el)}>

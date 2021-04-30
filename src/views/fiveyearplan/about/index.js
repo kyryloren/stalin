@@ -1,6 +1,5 @@
-/* eslint react-hooks/exhaustive-deps: 0 */
 import React, { useEffect, useRef } from 'react';
-import { TimelineLite, gsap } from 'gsap';
+import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { AboutSection, Row, Col } from './style';
 import { StyledImage, Container, ImageAnim, ParaText } from '@styles';
@@ -8,7 +7,7 @@ import { StyledImage, Container, ImageAnim, ParaText } from '@styles';
 gsap.registerPlugin(ScrollTrigger);
 
 const About = ({ data }) => {
-  let tl = new TimelineLite();
+  let tl = gsap.timeline();
   let aboutSection = useRef(null);
   let image = useRef(null);
 
@@ -27,7 +26,7 @@ const About = ({ data }) => {
 
     ScrollTrigger.addEventListener('refresh', () => window.scroll.update());
     ScrollTrigger.refresh();
-  }, [tl]);
+  }, [tl, aboutSection, image]);
 
   return (
     <AboutSection>
