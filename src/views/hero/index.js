@@ -22,7 +22,7 @@ const Hero = ({ data }) => {
     tl.staggerFrom(
       topText.current,
       1.3,
-      { scale: 0, yPercent: -100, delay: -0.5, ease: Power4.easeInOut },
+      { scale: 0, yPercent: -100, delay: 0.5, ease: Power4.easeInOut },
       0.02,
     )
       .fromTo(
