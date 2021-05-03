@@ -55,16 +55,18 @@ const Slider = ({ data }) => {
         <TextRow>
           <Col>
             <ParaText number="03">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Stalin also used education and the youth to create a new generation of believers that
+              would help maintain his position in society and his control over people. Different
+              playground games were transformed into their own Soviet versions, like Cowboys and
+              Indians became Reds and Whites.
             </ParaText>
           </Col>
           <Col>
             <ParaText number="04">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Stalin was able to carve out a position of power for himself. His terror and
+              propaganda machine allowed him to maintain power throughout his rule. Anyone who
+              opposed Stalin was seen as an enemy of the party, and in that sense also an enemy of
+              the people.
             </ParaText>
           </Col>
         </TextRow>

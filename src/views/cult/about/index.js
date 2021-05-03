@@ -9,15 +9,15 @@ const About = () => {
         <Row textTop>
           <ParaWrapper top>
             <NormalText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut enim ad minim
-              veniam,
+              Stalin's cult was dependent on Lenin's legacy. Stalin rewrote the past and falsified
+              photographs
             </NormalText>
           </ParaWrapper>
         </Row>
         <ParaWrapper>
           <NormalText>
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute
+            to ensure his succession. He upheld the core principles of Marxist-Leninism,
+            strengthening his cult.
           </NormalText>
         </ParaWrapper>
       </Container>

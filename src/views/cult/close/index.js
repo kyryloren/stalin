@@ -57,13 +57,14 @@ const Close = ({ data }) => {
         <Row>
           <Col>
             <ParaText number="01">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
+              Stalin's propaganda was everywhere, controlling people and brain washing them to
+              believing that Stalin was a god-like figure.
             </ParaText>
             <ParaText number="02">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              His image was everywhere. Stalin's propaganda served well in masking the darker side
+              of the regime and in bending the truth. He relied on the hypnotic power of mass
+              ideology to condition people into believing he was working to achieve perfect
+              socialism.
             </ParaText>
           </Col>
           <Col>

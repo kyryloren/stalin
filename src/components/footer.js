@@ -8,6 +8,7 @@ const FooterWrapper = styled.footer`
   justify-content: center;
   height: 100vh;
   background-color: var(--footer);
+  padding-top: 20vh;
 `;
 const Row = styled.div`
   display: flex;
